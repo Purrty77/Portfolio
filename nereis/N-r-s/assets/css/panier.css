@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.logo img{
+    width: 20em;
+   margin-top: -5%;
+   margin-left: -6%;
+
+}
+.logo{height: 40px;}
+
+
+
+.menu{
+
+background-size: cover;
+    background-image: url(../imgs/fond\ \(1\).png);
+    
+   
+ }
+ hr{
+    width: 50%;
+ }   
+ .panier {
+    display: flex;
+   width: 620px;
+    background: linear-gradient(to left, rgb(121,81,61), rgb(207,181,153));
+    gap: 30px;    
+    color: white;
+    text-align: center;
+    max-width: 1000px;
+    border-radius: 8px;
+    
+ }
+ 
+ .panier img {
+    width: 280px;
+    height: 360px;
+ }
+ .panier p{
+    margin-top: 80px;
+ }
+ .panierdeux img {
+    width: 280px;
+    height: 360px;
+    border-radius: 5px;
+    
+ }
+ .panierdeux{
+    display: flex;
+    color: white;
+    background: linear-gradient(to left, rgb(121,81,61), rgb(207,181,153));
+    width: 620px;
+    margin-top: 30px;
+    gap: 30px;
+    text-align: center;
+    border-radius: 8px;
+    
+ }
+ .panierdeux p {
+
+  margin-top: 80px; 
+ }
+ .flex{
+   display: flex; 
+   color: white;
+    width: 55%;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   gap: 30px;
+   margin-top: 20px;
+   
+   
+  
+ }
+ .flexun{
+    
+   background: linear-gradient(to left, rgb(121,81,61), rgb(207,181,153));
+width: 80%;
+    height: 150PX;
+    text-align: center;
+    gap: 20px;
+ color: white;
+ justify-content: space-between;
+ border-radius: 5px;
+   
+ }
+ .flexdeux{
+    background: linear-gradient(to left, rgb(121,81,61), rgb(207,181,153));
+    width: 500px;
+    text-align: center;
+    height: 340px;
+    gap: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+ }
+
+
+ 
+ .milieu{
+   display: flex;
+   justify-content:center;
+   align-items: flex-start;
+   max-width: 1000px;
+   /* background: linear-gradient(to right, rgb(121,81,61), rgb(207,181,153)); */
+   margin: 1% auto;
+   padding: 30px; 
+   border-radius: 10px;
+   gap: 50px;
+   
+ }
+
+ 
+ h4{
+   text-align: center;
+ }
+ 
+ .texte p {
+   margin: 8px 0;
+   
+ }
+ .frais{
+   display:flex;
+   justify-content: space-between;
+   margin-left: 20px;
+   margin-right:20px;
+ }
+ .quantité{
+   margin-top: 10px;
+ }
+ .quantité input{
+   width: 29px;
+   text-align: center;
+ }
+.bouton{
+   margin-top: 20px;
+   color:black;
+   width: 100%;
+   cursor: pointer;
+   border-radius: 5px;
+   font-weight: bold;
+   font-size: 16px;
+   
+}
+.paypal {
+
+   background-color: white;
+   width: 95%;
+   margin: 0 auto;
+   height: 30px;
+   border-radius: 5px;
+}
+
+
+.paiement{
+   background: linear-gradient(to left, rgb(121,81,61), rgb(207,181,153));
+   width: 400px;
+   height: 100px;
+   gap: 10px;
+}
+.paiement p{
+   text-align: center;
+   
+}
+.paiement img {
+   width: 100px;
+   height: 100px;
+}
+.placement{
+   display: flex;
+ justify-content: center;
+ gap: 10px;
+ align-items: center;
+}
+.placement img{
+   width: 45px;
+   height: 30px;
+   background-color: white;
+   align-items: center;
+   gap: 10px;
+}
+.basdepage{
+   display: flex;
+   justify-content: space-around;
+   background: linear-gradient(to left, rgb(121,81,61), rgb(207,181,153));
+   text-align: center;
+   width: 65%;
+   margin: auto;
+   border-radius: 5px;
+
+}
+.basdepage img{
+  margin-top: 15px;
+  
+}
+.basdepage p {
+   margin-top: 15px;
+   margin-right: 22px;
+}
+.haut {
+   width: 100%;
+   overflow: hidden;
+   white-space: nowrap;
+   box-sizing: border-box;
+   padding: 5px 0;
+   background: linear-gradient(to right, rgb(121, 81, 61), rgb(207, 181, 153));
+ }
+  
+ .haut span {
+   display: inline-block;
+   padding-left: 100%;
+   animation: scroll 10s linear infinite;
+   color: #fff;
+ }
+  
+ @keyframes scroll {
+   from {
+     transform: translateX(100%);
+   }
+   to {
+     transform: translateX(-100%);
+   }
+ }
+ .panier img:hover {
+   transform: translateY(-5px);
+ }
+ .panierdeux img:hover {
+   transform: translateY(-5px);
+ }
+ .list:hover{
+   transform: translateY(-5px);
+ }
+ h5{
+   text-align: center;
+   padding: 0;
+   margin: 0 !important;
+ }
+ @media (max-width :1024px) {
+ 
+    .flexun{
+      display: none;
+    }
+    .menu{
+      display: flex;
+      flex-direction: column;
+
+    }
+    .milieu{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo img {
+      width: 15em;
+    }
+    .list{
+      width: 60%;
+      margin: 0 auto;
+    }
+    .flexdeux{
+      margin: 0 auto;
+    }
+    .flex{
+      width: 100%;
+    }
+
+ }
+ @media(max-width: 768px){
+  .panier img {
+   width: 100%;
+   height: 60vh;
+  }
+  .panier{
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+   margin-bottom: 2em;
+  }
+  .paiement{
+   width: 100%;
+  }
+  .basdepage{
+   display: none;
+  }
+  .menu{
+   width: 100%;
+  }
+  .panierdeux{
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+  }
+  .panierdeux img {
+   width: 100%;
+   height: 60vh;
+  }
+  .flexdeux{
+   width: 90%;
+  }
+  .logo img{
+   margin-top: -3em;
+   margin-left: 5em;
+  }
+  .list {
+   margin-top: 5em;
+  }
+  .flex{
+   align-items: center;
+  }
+  .milieu{
+   padding: ;
+  }
+ }

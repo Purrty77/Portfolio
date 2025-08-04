@@ -1,0 +1,117 @@
+
+body{
+    background-image: url(/assets/imgs/fond.png);
+    background-repeat: no-repeat; background-size: cover;
+}
+
+
+.bijoux-section {
+ padding: 50px;
+ text-align: center;
+}
+
+
+.bijoux-section1 {
+ padding: 50px;
+ text-align: center;
+}
+
+
+.produit-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+ gap: 60px;
+ width: 100%;
+ margin: 0 auto;
+}
+
+.produit-grid1 {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+ gap: 60px;
+ width: 100%;
+ margin: 0 auto;
+}
+.product-card {
+ background:linear-gradient( to top, rgb(92, 63, 48), rgb(197, 167, 135) );
+ border-radius: 10px;
+ box-shadow: 4px 4px 10px rgb(56, 34, 2) ;
+ padding: 15px;
+ position: relative;
+ transition: transform 0.2s;
+
+}
+
+.product-card1 {
+background:linear-gradient( to top, rgb(92, 63, 48), rgb(197, 167, 135) );
+ border-radius: 10px;
+ box-shadow: 4px 4px 10px rgb(56, 34, 2)  ;
+ padding: 15px;
+ position: relative;
+ transition: transform 0.2s;
+
+}
+.product-card:hover {
+ transform: scale(1.02);
+}
+
+.product-card1:hover {
+ transform: scale(1.02);
+}
+.product-card img {
+ width: 100%;
+ border-radius: 4px; 
+ height: 47vh;
+}
+
+.product-card1 img {
+ width: 100%;
+ border-radius: 4px; 
+ height: 42vh;
+}
+.product-info {
+ margin-top: 10px;
+ text-align: center;
+}
+
+.product-info1 {
+ margin-top: 10px;
+ text-align: center;
+}
+.product-info span {
+ display: block;
+ font-size: 24px;
+ margin-bottom: 5px;
+ color: #eae4d5;
+
+}
+
+.product-info1 span {
+ display: block;
+ font-size: 24px;
+ margin-bottom: 5px;
+ color:#eae4d5;
+}
+.product-info strong {
+ font-size: 20px;
+ color: #eae4d5;
+}
+.product-info1 strong {
+ font-size: 20px;
+ color: #eae4d5;
+}
+
+.plus {
+ position: absolute;
+ top: 25px;
+ right: 25px;
+ font-size: 20px;
+ color: blanchedalmond;
+ background: rgba(0, 0, 0, 0.1);
+ border-radius: 50%;
+ width: 25px;
+ height: 25px;
+ text-align: center;
+ line-height: 25px;
+ cursor: pointer;
+}

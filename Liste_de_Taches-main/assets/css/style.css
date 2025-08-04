@@ -1,0 +1,66 @@
+body{
+    background-color: #DDA853;
+    color: #27548A;
+}
+
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+}
+input{
+    border-radius: 10px;
+    height: 37px;
+    color: #27548A;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 5px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: #F3F3E0;
+    color: #183B4E;
+    width: 400px;
+    margin: auto;
+
+}
+
+.btn-ajouter, #flemme, #trier{
+    color: #27548A;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: #F3F3E0;
+}
+
+#dark-light{
+    color: #F3F3E0;
+    border: 2px solid gray;
+    border-radius: 10px;
+    background-color: #27548A;
+}
+
+
+
+
+#supprimer{
+border-radius: 10px;
+background-color: white;
+}
+
+
+.exo{
+    position: absolute;
+    top: 55rem;
+    left: 35rem;
+}
+
+.github{
+    position: absolute;
+    top: 53rem;
+    left: 55rem;
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Gestionnaire de Liste de Tâches</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+ <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+ <section class="container text-center">
+    <main>
+<div class="pt-5" id="taskcontainer">
+ <h1>Ma liste de Tâches 🗒️</h1>
+ <p class="lead">Une Tâche avec un "â" parce que Tache sans accent ça veut dire souillure.</p> 
+ <button class=" btn btn-light" id="flemme">Auto</button>
+ <input type="text" id="taskinput" placeholder="Nouvelle tâche"/>
+ <button class="btn-ajouter btn btn-light" id="addtaskbutton">Ajouter</button>
+ <ul class="pt-3 list-unstyled mx-auto w-50 text-center d-flex flex-column gap-1" id="tasklist"></ul>
+ 
+</div>
+<div>
+    <button class=" btn btn-light position-absolute top-0 end-0" id="dark-light">Blue Mode</button>
+    <button class=" btn btn-light position-absolute top-0 start-0" id="trier">Trier par ordre alphabétique</button>
+ </div>
+</main>
+<footer>
+    <p class="exo">
+        Ce site est un projet d'exercice personnel. Tout le contenu est gratuit et destiné uniquement à des fins d'apprentissage.
+    </p>
+    <p class="github"> 
+        <a href="https://github.com/Purrty77">Mon Github</a> 
+    </p>
+</footer>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="./assets/js/structure.js"></script>
+</body>
+</html>

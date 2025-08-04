@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, section.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+.prenom_nom{
+      font-family: "Playwrite AU QLD", cursive;
+      font-style: italic;
+}
+
+.fontspe{
+    font-family: "Mozilla Headline", sans-serif;
+}
+
+
+.tele_cv:hover {
+  box-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+}
+
+
+
+.sec-1{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;  
+    position: relative;
+}
+
+.sec-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/bg1stxd.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  z-index: -1;
+  transform: scale(1.1);
+}
+
+
+.joinme{
+    background: #F3466D;
+    background: linear-gradient(90deg, rgba(243, 70, 109, 1) 0%, rgba(203, 76, 144, 1) 53%, rgba(160, 82, 177, 1) 100%);
+}

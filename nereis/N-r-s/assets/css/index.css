@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Tinos", serif;
+}
+.container-lollo {
+  width: 100%;
+}
+
+/* On commence par portable et apres j'ai fait les media query */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 3em 0;
+}
+
+/* taille logo haut */
+
+.taille {
+  width: 7em;
+}
+
+.deroullante-1 {
+  display: none;
+}
+.liste {
+  display: none;
+}
+.ricerca {
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-left: -7em;
+  width: 150px;
+}
+.icone {
+  display: none;
+  margin-right: 1em;
+}
+.img {
+  display: flex;
+  gap: 2em;
+}
+
+.header a {
+  text-decoration: none;
+  color: #000;
+}
+.aide-moi {
+  margin-left: -5.5em;
+}
+.container-fluid {
+  width: 50px !important;
+}
+.deroullante-2 {
+  margin-left: -6em;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to top, rgb(121, 81, 61), rgb(207, 181, 153));
+}
+.logo-img-footer {
+  width: 20%;
+  margin-left: 0.5em;
+}
+.catalogue nav ul {
+  list-style-type: none;
+}
+.marque nav ul {
+  list-style-type: none;
+}
+.service-client nav ul {
+  list-style-type: none;
+}
+
+.bottom-footer {
+  background-color: rgb(121, 81, 61);
+}
+
+.bottom-footer nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  font-size: 0.6em;
+  padding-left: 0;
+}
+.catalogue {
+  display: none;
+}
+.marque {
+  display: none;
+}
+.service-client {
+  display: none;
+}
+.logo-img-footer p {
+  display: none;
+}
+.icone-footer {
+  margin-right: 0.5em;
+  display: flex;
+  gap: 1em;
+}
+.bottom-footer a {
+  color: #fff;
+}
+.catalogue a {
+  color: #F2F2F2;
+  text-decoration: none;
+}
+.marque a {
+  color: #F2F2F2;
+  text-decoration: none;
+}
+.service-client a {
+  color: #F2F2F2;
+  text-decoration: none;
+}
+.catalogue nav ul:not(:first-child) {
+  gap: 1em;
+}
+
+.bottom-footer nav ul li:hover {
+  transform: scale(1.2);
+}
+
+
+
+body {
+  background-image: url(../imgs/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Ici cest le css pour l'animation de le span haut tout */
+
+.promotions {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding: 5px 0;
+  background: linear-gradient(to right, rgb(121, 81, 61), rgb(207, 181, 153));
+}
+
+.promotions span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 15s linear infinite;
+  color: #fff;
+}
+
+.text-shadow {
+  text-shadow: 4px 4px 4px black;
+}
+
+.collection {
+  transition: 0.3s;
+}
+
+.collection:hover {
+  transform: scale(1.02);
+}
+
+.box-shadow-test {
+  box-shadow: 3px 3px 9px rgb(56, 34, 2);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Notre media query pour le tablet */
+
+@media (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+  .search {
+    display: none;
+  }
+  .deroullante-1 {
+    display: block;
+  }
+  .deroullante-2 {
+    display: none;
+  }
+  .icone {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+  }
+  .ricerca-2 {
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 10px 20px;
+  }
+  .taille {
+    margin-left: 0;
+    width: 10em;
+  }
+  .bottom-footer nav ul {
+    font-size: 1em;
+    margin: 0;
+  }
+}
+
+/* notre media query pour les ordinateur */
+
+@media (min-width: 1024px) {
+  .deroullante-1 {
+    display: none;
+  }
+  .liste {
+    display: flex;
+  }
+  .liste nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10%;
+    margin-left: -12em;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .search-2 {
+    display: none;
+  }
+  .catalogue {
+    display: block;
+
+  }
+  .marque {
+    display: block;
+
+  }
+  .service-client {
+    display: block;
+  
+  }
+  .logo-img-footer p {
+    display: block;
+    text-align: justify;
+    line-height: 1.2em;
+    margin-left: 0.5em;
+  }
+  .catalogue nav ul li {
+    margin: 0.7em 0;
+ 
+  }
+  .marque nav ul li {
+    margin: 0.7em 0;
+  
+  }
+  .service-client nav ul li {
+    margin: 0.7em 0;
+   
+  }
+  .liste nav ul li:hover {
+    transform: scale(1.2);
+    border-bottom: 2px solid rgb(207, 181, 153);
+  }
+  .catalogue nav ul li:hover {
+    border-bottom: solid 1px rgb(207, 181, 153);
+  }
+  .marque nav ul li:hover {
+    border-bottom: solid 1px rgb(207, 181, 153);
+  }
+  .service-client nav ul li:hover {
+    border-bottom: solid 1px rgb(207, 181, 153);
+  }
+  .taille{
+    margin-left: 1em;
+    width: 15em;
+    }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S&P 500 où Livret A</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section class="container-fluid">
+      <header class="pb-5">
+        <nav class="navbar fixed-top navbar-expand-md bg-body-tertiary">
+          <a class="navbar-brand ps-4" href="./Accueil.html"
+            ><img
+              src="./assets/img/Logo.png"
+              alt="Logo s&p 500"
+              style="width: 15rem"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto pe-5 gap-5">
+              <li class="nav-item">
+                <a class="nav-link" href="./histoire_sp500.html"
+                  >Histoire du S&P 500</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Comparatif Livret A</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./autreIndices.html">Pourquoi pas d'autre Indices ?</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+        <main class="container my-5">
+
+  <h1 class="mb-4 text-center">Comparatif des Gains : Livret A vs S&P 500</h1>
+
+  <p class="lead text-center">
+    Simulation d’un investissement de <strong>10 000 €</strong> sur les 20 dernières années,
+    placé soit sur un Livret A, soit sur le S&P 500.
+  </p>
+
+  <div class="row text-center">
+    <div class="col-md-6 mb-4">
+      <h3>Livret A</h3>
+      <p>Rendement lent mais sécurisé, taux moyen estimé autour de 2.4%/an.</p>
+      <img src="./assets/img/LivretA.png" class="img-fluid rounded shadow mt-4" alt="Gains estimés Livret A">
+    </div>
+    <div class="col-md-6 mb-4">
+      <h3>S&P 500</h3>
+      <p>Rendement plus élevé, mais avec des risques. Moyenne historique autour de 7 à 10%/an.</p>
+      <img src="./assets/img/sp500.png" class="img-fluid rounded shadow" alt="Gains estimés S&P 500">
+    </div>
+  </div>
+
+  <div class="alert alert-warning mt-4">
+    Ces graphiques sont à but pédagogique et basés sur des estimations historiques. Les performances passées ne garantissent pas les performances futures.
+  </div>
+
+<div class="bg-light border rounded p-4 mt-4 shadow-sm">
+  <h5 class="mb-3">📊 Résumé des performances sur 20 ans</h5>
+  <p>
+    Si vous aviez placé <strong>10 000 €</strong> sur un <strong>Livret A</strong> au taux légal fixe de <strong>2,4 %</strong>, votre capital aurait atteint environ <strong>16 100 €</strong> après 20 ans. Ce type de placement est garanti, sans risque de perte, mais il offre des rendements très modestes, souvent à peine supérieurs à l’inflation.
+  </p>
+  <p>
+    À l’inverse, un investissement de la même somme sur le <strong>S&P 500</strong> — un indice composé des 500 plus grandes entreprises américaines — avec une performance moyenne de <strong>8 % par an</strong>, aurait permis d’atteindre environ <strong>46 600 €</strong>. Cela représente un gain presque trois fois supérieur, simplement en laissant le temps et les intérêts composés faire leur travail.
+  </p>
+  <p>
+    Bien entendu, investir en bourse comporte des risques : les marchés fluctuent, et certaines années peuvent être négatives. Cependant, l’histoire montre que sur le long terme, le marché américain a toujours progressé. C’est cette perspective à long terme qui permet de lisser les variations et de bénéficier de la croissance économique.
+  </p>
+  <p class="mb-0">
+    Ces graphiques soulignent donc une réalité simple mais puissante : pour faire croître votre épargne de manière significative, <strong>la patience et l'exposition à des actifs dynamiques</strong> peuvent faire toute la différence. Il ne s'agit pas d'opposer sécurité et rendement, mais de comprendre que chaque placement a un rôle à jouer selon vos objectifs et votre horizon de temps.
+  </p>
+</div>
+
+
+</main>
+
+
+
+
+      <footer class="bg-light py-4 mt-5 border-top">
+        <div
+          class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-muted"
+          style="font-size: 0.9em"
+        >
+          <div class="text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-1">
+              Ce site a été réalisé dans un but
+              <strong>éducatif et personnel</strong>, dans le cadre de mon
+              apprentissage en développement web.
+            </p>
+            <p class="mb-1">
+              Les informations présentées ne constituent en aucun cas des
+              <strong>conseils en investissement</strong>, des recommandations
+              financières ou juridiques.
+            </p>
+            <p class="mb-0">
+              Je décline toute responsabilité en cas de pertes financières liées
+              à une mauvaise interprétation du contenu de ce site.
+            </p>
+          </div>
+          <div class="text-md-end text-center">
+            <a
+              href="https://github.com/Purrty77"
+              target="_blank"
+              class="text-decoration-none text-muted"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-github me-2"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8a8.001 8.001 0 0 0 5.47 7.59c.4.074.55-.174.55-.388 0-.19-.007-.693-.01-1.36-2.01.438-2.53-.97-2.69-1.86-.09-.23-.48-.938-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.2 1.87.86 2.33.66.07-.522.28-.861.508-1.06-1.78-.202-3.644-.89-3.644-3.95 0-.873.31-1.59.823-2.15-.083-.202-.357-1.017.078-2.12 0 0 .672-.215 2.2.82a7.632 7.632 0 0 1 2-.27c.68.003 1.36.092 2 .27 1.52-1.035 2.2-.82 2.2-.82.435 1.103.162 1.918.08 2.12.513.56.822 1.277.822 2.15 0 3.07-1.868 3.746-3.65 3.946.288.25.543.735.543 1.48 0 1.068-.01 1.932-.01 2.196 0 .215.15.466.55.388A8.001 8.001 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+              Mon GitHub
+            </a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="./assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
