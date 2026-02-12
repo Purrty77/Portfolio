@@ -1,0 +1,23 @@
+RewriteEngine On
+
+# Skip existing files/dirs and public assets
+RewriteCond %{REQUEST_URI} ^/public/ [OR]
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Error shortcuts
+RewriteRule ^404$ index.php?controller=error&action=notFound [L,QSA]
+RewriteRule ^403$ index.php?controller=error&action=forbidden [L,QSA]
+
+# Root route
+RewriteRule ^$ index.php [L]
+
+# /controller
+RewriteRule ^(\w+)/?$ index.php?controller=$1 [L,QSA]
+
+# /controller/action
+RewriteRule ^(\w+)/(\w+)$ index.php?controller=$1&action=$2 [L,QSA]
+
+# /controller/action/id
+RewriteRule ^(\w+)/(\w+)/(\S+)$ index.php?controller=$1&action=$2&id=$3 [L,QSA]
