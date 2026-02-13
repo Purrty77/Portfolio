@@ -77,7 +77,7 @@
 
       <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
-          <img src="/portfolio/public/assets/img/screenshot_sp.png" alt="Mini Wiki S&P 500" class="h-44 w-full object-cover">
+          <img src="/portfolio/public/assets/img/Screenshot_sp.png" alt="Mini Wiki S&P 500" class="h-44 w-full object-cover">
           <div class="p-5 flex flex-col gap-4 flex-1">
             <div>
               <h3 class="text-lg font-semibold text-slate-900">Mini Wiki S&amp;P 500</h3>
@@ -91,7 +91,7 @@
         </article>
 
         <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
-          <img src="/portfolio/public/assets/img/screenshot-nrs.png" alt="E‑Commerce Bijoux" class="h-44 w-full object-cover">
+          <img src="/portfolio/public/assets/img/Screenshot-nrs.png" alt="E‑Commerce Bijoux" class="h-44 w-full object-cover">
           <div class="p-5 flex flex-col gap-4 flex-1">
             <div>
               <h3 class="text-lg font-semibold text-slate-900">Nereis — E‑commerce Bijoux</h3>
@@ -105,7 +105,7 @@
         </article>
 
         <article class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
-          <img src="/portfolio/public/assets/img/screenshot-tasklist.png" alt="Liste de tâches" class="h-44 w-full object-cover">
+          <img src="/portfolio/public/assets/img/Screenshot-tasklist.png" alt="Liste de tâches" class="h-44 w-full object-cover">
           <div class="p-5 flex flex-col gap-4 flex-1">
             <div>
               <h3 class="text-lg font-semibold text-slate-900">TaskList</h3>
