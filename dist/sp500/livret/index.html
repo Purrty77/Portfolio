@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Livret A vs S&P 500</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: #f8fafc; }
+  </style>
+</head>
+<body class="text-slate-900">
+  <header class="bg-white text-slate-900 border-b border-slate-200">
+  <div class="max-w-6xl mx-auto px-6 py-6">
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <a href="/sp500" class="flex items-center gap-3">
+          <img
+            src="/public/projects/sp500/assets/img/Logo.png"
+            alt="Logo S&P 500"
+            class="h-10 md:h-12 w-auto"
+          />
+          <div class="text-xs uppercase tracking-[0.25em] text-slate-500">Mini Guide</div>
+        </a>
+        <nav class="flex flex-wrap items-center gap-3 text-sm">
+          <a
+            class="inline-flex items-center rounded-full border px-3 py-1.5 font-semibold transition border-slate-300 text-slate-700 hover:border-slate-400 hover:text-slate-900"
+            href="/sp500/histoire"
+          >Histoire</a>
+          <a
+            class="inline-flex items-center rounded-full border px-3 py-1.5 font-semibold transition border-slate-900 bg-slate-900 text-white"
+            href="/sp500/livret"
+          >Livret A vs S&amp;P 500</a>
+          <a
+            class="inline-flex items-center rounded-full border px-3 py-1.5 font-semibold transition border-slate-300 text-slate-700 hover:border-slate-400 hover:text-slate-900"
+            href="/sp500/autres"
+          >Pourquoi le S&amp;P 500</a>
+          <a
+            href="/"
+            class="inline-flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            Retour au Portfolio
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <section class="space-y-5">
+      <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Comparatif</p>
+      <h1 class="text-3xl md:text-5xl font-bold">Livret A vs S&amp;P 500</h1>
+      <p class="text-lg text-slate-600 max-w-3xl">
+        Simulation d’un investissement de 10 000 € sur 20 ans, avec un Livret A et le S&amp;P 500.
+      </p>
+    </section>
+
+    <section class="mt-10 grid gap-6 lg:grid-cols-2">
+      <div class="rounded-2xl bg-white p-6 shadow-sm border border-slate-100">
+        <div class="flex items-center justify-between">
+          <h2 class="text-xl font-semibold">Livret A</h2>
+          <span class="text-xs uppercase tracking-[0.2em] text-slate-400">~2,4%/an</span>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">Rendement sécurisé mais lent, idéal pour l’épargne de précaution.</p>
+        <img
+          src="/public/projects/sp500/assets/img/LivretA.png"
+          alt="Gains estimés Livret A"
+          class="mt-5 rounded-xl border border-slate-200"
+        />
+      </div>
+      <div class="rounded-2xl bg-white p-6 shadow-sm border border-slate-100">
+        <div class="flex items-center justify-between">
+          <h2 class="text-xl font-semibold">S&amp;P 500</h2>
+          <span class="text-xs uppercase tracking-[0.2em] text-slate-400">~8%/an</span>
+        </div>
+        <p class="mt-3 text-sm text-slate-600">Potentiel de rendement plus élevé, mais volatilité à court terme.</p>
+        <img
+          src="/public/projects/sp500/assets/img/sp500.png"
+          alt="Gains estimés S&P 500"
+          class="mt-5 rounded-xl border border-slate-200"
+        />
+      </div>
+    </section>
+
+    <section class="mt-8">
+      <div class="rounded-2xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
+        Ces graphiques sont à but pédagogique et basés sur des estimations historiques. Les performances passées ne
+        garantissent pas les performances futures.
+      </div>
+    </section>
+
+    <section class="mt-8">
+      <div class="rounded-3xl bg-white p-8 shadow-sm border border-slate-100">
+        <h2 class="text-2xl font-semibold">Résumé des performances sur 20 ans</h2>
+        <div class="mt-4 space-y-3 text-sm text-slate-600">
+          <p>
+            Avec 10 000 € sur un Livret A à 2,4%, le capital atteindrait environ 16 100 € après 20 ans.
+            C’est garanti, mais peu dynamique.
+          </p>
+          <p>
+            Le même investissement sur le S&amp;P 500, à 8% de moyenne, pourrait atteindre environ 46 600 €,
+            grâce aux intérêts composés.
+          </p>
+          <p>
+            L’investissement en bourse reste risqué, mais l’historique montre une progression solide sur le long terme.
+            Tout dépend de votre horizon et de vos objectifs.
+          </p>
+          <p>
+            L’idée n’est pas d’opposer sécurité et rendement, mais de comprendre comment combiner les deux.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-950 text-slate-300 mt-16">
+  <div class="max-w-6xl mx-auto px-6 py-8 grid gap-6 md:grid-cols-[1.4fr_0.6fr]">
+    <div class="text-sm leading-relaxed">
+      <p class="mb-2">Ce site a été réalisé dans un but <strong>éducatif et personnel</strong>, dans le cadre de mon apprentissage en développement web.</p>
+      <p class="mb-2">Les informations présentées ne constituent en aucun cas des <strong>conseils en investissement</strong> ni des recommandations financières.</p>
+      <p>Je décline toute responsabilité en cas de pertes financières liées à une mauvaise interprétation du contenu de ce site.</p>
+    </div>
+    <div class="flex items-center md:justify-end gap-3">
+      <a
+        href="https://github.com/Purrty77"
+        target="_blank"
+        class="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white hover:border-white"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8a8.001 8.001 0 0 0 5.47 7.59c.4.074.55-.174.55-.388 0-.19-.007-.693-.01-1.36-2.01.438-2.53-.97-2.69-1.86-.09-.23-.48-.938-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.2 1.87.86 2.33.66.07-.522.28-.861.508-1.06-1.78-.202-3.644-.89-3.644-3.95 0-.873.31-1.59.823-2.15-.083-.202-.357-1.017.078-2.12 0 0 .672-.215 2.2.82a7.632 7.632 0 0 1 2-.27c.68.003 1.36.092 2 .27 1.52-1.035 2.2-.82 2.2-.82.435 1.103.162 1.918.08 2.12.513.56.822 1.277.822 2.15 0 3.07-1.868 3.746-3.65 3.946.288.25.543.735.543 1.48 0 1.068-.01 1.932-.01 2.196 0 .215.15.466.55.388A8.001 8.001 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+          />
+        </svg>
+        Mon GitHub
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

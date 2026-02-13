@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tasklist — App Moderne</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --ink: #0f172a;
+      --muted: #64748b;
+      --panel: rgba(255, 255, 255, 0.75);
+      --stroke: rgba(148, 163, 184, 0.35);
+    }
+    body {
+      background: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.15), transparent 40%),
+                  radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.2), transparent 45%),
+                  #f8fafc;
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <header class="max-w-6xl mx-auto px-6 py-10">
+    <div class="flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Mini App</p>
+        <h1 class="text-3xl md:text-5xl font-bold">Tasklist</h1>
+        <p class="mt-2 text-slate-600">Un gestionnaire de tâches simple et moderne, pensé pour l’action.</p>
+      </div>
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-700"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+        Retour au Portfolio
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 pb-16 flex-1 w-full">
+    <section class="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] items-start">
+      <div class="rounded-3xl border border-slate-200/60 bg-white/80 backdrop-blur p-6 shadow-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h2 class="text-xl font-semibold">Mes tâches</h2>
+            <p class="text-sm text-slate-500">Ajoute, trie et coche tes tâches au fur et à mesure.</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button id="btn-auto" class="rounded-full border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-700 hover:border-slate-400">Auto</button>
+            <button id="btn-sort" class="rounded-full border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-700 hover:border-slate-400">Trier A → Z</button>
+            <button id="btn-theme" class="rounded-full border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-700 hover:border-slate-400">Mode Nuit</button>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <input
+            id="task-input"
+            type="text"
+            placeholder="Nouvelle tâche"
+            class="flex-1 min-w-[220px] rounded-2xl border border-slate-200 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <button
+            id="btn-add"
+            class="rounded-2xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-800"
+          >
+            Ajouter
+          </button>
+        </div>
+
+        <ul id="task-list" class="mt-6 space-y-3"></ul>
+      </div>
+
+      <aside class="rounded-3xl border border-slate-200/60 bg-white/80 backdrop-blur p-6 shadow-lg text-center space-y-6">
+        <div>
+          <p class="text-xs uppercase tracking-[0.3em] text-slate-400">Conseils rapides</p>
+          <h3 class="mt-2 text-lg font-semibold">Gagne du temps</h3>
+          <p class="mt-2 text-sm text-slate-600">Des astuces simples pour garder le contrôle.</p>
+        </div>
+
+        <div class="grid gap-3">
+          <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
+            🧩 Tâches courtes et claires
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
+            ⚡ Auto pour pré-remplir
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
+            ⏎ Entrée pour ajouter
+          </div>
+          <div class="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm">
+            🔤 Trier pour visualiser
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-slate-900 text-white px-4 py-4 text-sm">
+          Mini workflow conseillé: écris → trie → coche → nettoie.
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <div class="mt-auto w-full">
+    <footer class="bg-slate-950 text-slate-300 mt-16">
+  <div class="max-w-6xl mx-auto px-6 py-8 grid gap-6 md:grid-cols-[1.4fr_0.6fr]">
+    <div class="text-sm leading-relaxed">
+      <p class="mb-2">Ce site a été réalisé dans un but <strong>éducatif et personnel</strong>, dans le cadre de mon apprentissage en développement web.</p>
+      <p class="mb-2">Les informations présentées ne constituent en aucun cas des <strong>conseils en investissement</strong> ni des recommandations financières.</p>
+      <p>Je décline toute responsabilité en cas de pertes financières liées à une mauvaise interprétation du contenu de ce site.</p>
+    </div>
+    <div class="flex items-center md:justify-end gap-3">
+      <a
+        href="https://github.com/Purrty77"
+        target="_blank"
+        class="inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white hover:border-white"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8a8.001 8.001 0 0 0 5.47 7.59c.4.074.55-.174.55-.388 0-.19-.007-.693-.01-1.36-2.01.438-2.53-.97-2.69-1.86-.09-.23-.48-.938-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.2 1.87.86 2.33.66.07-.522.28-.861.508-1.06-1.78-.202-3.644-.89-3.644-3.95 0-.873.31-1.59.823-2.15-.083-.202-.357-1.017.078-2.12 0 0 .672-.215 2.2.82a7.632 7.632 0 0 1 2-.27c.68.003 1.36.092 2 .27 1.52-1.035 2.2-.82 2.2-.82.435 1.103.162 1.918.08 2.12.513.56.822 1.277.822 2.15 0 3.07-1.868 3.746-3.65 3.946.288.25.543.735.543 1.48 0 1.068-.01 1.932-.01 2.196 0 .215.15.466.55.388A8.001 8.001 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+          />
+        </svg>
+        Mon GitHub
+      </a>
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="/public/assets/js/tasklist.js"></script>
+</body>
+</html>
