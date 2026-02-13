@@ -9,7 +9,7 @@
         Bijoux inspirés par l'océan, imaginés comme des souvenirs lumineux. Des collections raffinées pour célébrer
         les moments précieux, chaque jour.
       </p>
-      <a href="/portfolio" class="inline-flex items-center gap-2 rounded-full border border-amber-100/30 px-4 py-2 text-xs uppercase tracking-widest text-amber-100 hover:border-amber-100">Retour au portfolio</a>
+      <a href="/portfolio/" class="inline-flex items-center gap-2 rounded-full border border-amber-100/30 px-4 py-2 text-xs uppercase tracking-widest text-amber-100 hover:border-amber-100">Retour au portfolio</a>
     </div>
     <div class="space-y-4">
       <p class="text-xs uppercase tracking-[0.3em] text-amber-200">Paiements sécurisés</p>

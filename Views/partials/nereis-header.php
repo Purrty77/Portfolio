@@ -13,7 +13,7 @@ $inactiveClass = 'text-slate-700 border-transparent hover:text-emerald-900 hover
           <img src="/portfolio/public/projects/nereis/assets/imgs/logo-nereis.png" alt="Logo Nereis" class="h-10 w-auto">
           <span class="hidden sm:inline text-xs uppercase tracking-[0.4em] text-slate-500">Bijoux marins</span>
         </a>
-        <a href="/portfolio" class="hidden md:inline-flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-white hover:bg-blue-700">Retour au portfolio</a>
+        <a href="/portfolio/" class="hidden md:inline-flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-white hover:bg-blue-700">Retour au portfolio</a>
         <div class="hidden lg:flex items-center gap-3">
           <div class="relative">
             <input type="text" placeholder="Recherche" class="w-64 rounded-full border border-slate-200 bg-white/80 px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-200">
