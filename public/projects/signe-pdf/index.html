@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SIGNE PDF gratuit | Signer un PDF en ligne gratuitement</title>
+    <meta
+      name="description"
+      content="Signé PDF gratuit permet de signer un PDF ou un DOCX en ligne gratuitement. Placez votre signature, choisissez la police et la taille, puis téléchargez le document signé."
+    />
+    <meta
+      name="keywords"
+      content="signé PDF gratuit, signer PDF en ligne, signature PDF gratuite, signature numérique PDF, signer document DOCX"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="Purrty77" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:title" content="SIGNE PDF gratuit | Signer un PDF en ligne gratuitement" />
+    <meta
+      property="og:description"
+      content="Signez vos PDF et DOCX gratuitement en ligne. Positionnez votre signature, personnalisez-la, puis téléchargez votre document signé."
+    />
+    <meta property="og:site_name" content="SIGNE PDF gratuit" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SIGNE PDF gratuit | Signer un PDF en ligne gratuitement" />
+    <meta
+      name="twitter:description"
+      content="Service gratuit pour signer un PDF ou un DOCX en ligne, sans conservation de données."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Sacramento&family=Sora:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/projects/signe-pdf/styles.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "SIGNE PDF gratuit",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "fr",
+        "description": "Application web gratuite pour signer un PDF ou un DOCX en ligne.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <h1>SIGNE PDF GRATUIT</h1>
+        <a href="/" class="portfolio-back" aria-label="Retour au Portfolio">
+          <svg xmlns="http://www.w3.org/2000/svg" class="portfolio-back__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Retour au Portfolio
+        </a>
+        <p class="site-header__tagline">Signer un document en ligne, gratuitement et sans inscription.</p>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false">Mode sombre</button>
+      </div>
+    </header>
+
+    <main class="app">
+      <section class="panel">
+        <h2>Signature numérique de documents</h2>
+        <p>
+          Dépose un PDF ou DOCX, place tes signatures, puis télécharge le fichier
+          modifié.
+        </p>
+
+        <label class="field">
+          <span>Document</span>
+          <input id="fileInput" type="file" accept=".pdf,.doc,.docx" />
+        </label>
+
+        <label class="field">
+          <span>Texte de signature</span>
+          <input
+            id="signatureText"
+            type="text"
+            placeholder="Ex: Jean Dupont"
+            value="Jean Dupont"
+          />
+        </label>
+
+        <label class="field">
+          <span>Police</span>
+          <select id="fontFamily">
+            <option value="Helvetica">Helvetica</option>
+            <option value="TimesRoman">Times New Roman</option>
+            <option value="Courier">Courier New</option>
+            <option value="GreatVibes">Great Vibes</option>
+            <option value="Allura">Allura</option>
+            <option value="AlexBrush">Alex Brush</option>
+            <option value="Sacramento">Sacramento</option>
+            <option value="DancingScript">Dancing Script</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Taille</span>
+          <input id="fontSize" type="range" min="6" max="64" value="24" />
+          <output id="fontSizeValue">24 px</output>
+        </label>
+
+        <label class="field">
+          <span>Rotation</span>
+          <input id="rotation" type="range" min="-180" max="180" value="0" />
+          <output id="rotationValue">0 deg</output>
+        </label>
+
+        <div class="actions">
+          <button id="placeSignatureBtn" disabled>Ajouter une signature</button>
+          <button id="deleteSignatureBtn" disabled>Supprimer la signature sélectionnée</button>
+          <button id="downloadBtn" disabled>Télécharger le document signé</button>
+        </div>
+
+        <p id="status" class="status">En attente d'un document.</p>
+      </section>
+
+      <section class="viewer-wrap" aria-label="Aperçu du document">
+        <div id="viewer" class="viewer"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <div class="footer-left">
+          <p class="github-row">
+            GitHub:
+            <a class="github-link" href="https://github.com/Purrty77" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+              </svg>
+              <span>https://github.com/Purrty77</span>
+            </a>
+          </p>
+          <p class="footer-note">Service gratuit qui ne garde aucune donnée.</p>
+        </div>
+
+        <div class="footer-right">
+          <p>
+            Service gratuit sans inscription. Aucun document ni donnée personnelle n’est conservé après actualisation.
+            Outil fourni en l’état, sans garantie. L’utilisateur reste responsable de l’usage et de la validité juridique des documents signés.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@pdf-lib/fontkit@1.1.1/dist/fontkit.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mammoth@1.9.1/mammoth.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script type="module" src="/public/projects/signe-pdf/app.js"></script>
+  </body>
+</html>
